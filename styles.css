@@ -1,4 +1,3 @@
-/* your code here */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 * {
@@ -24,6 +23,7 @@ ul {
     list-style: none;
 }
 
+/* Main Product Container */
 .product {
     display: flex;
     width: 90%;
@@ -36,7 +36,7 @@ ul {
     background: white;
 }
 
-/* Product Photo */
+/* Product Photo - Matching your required class name */
 .product__photo {
     position: relative;
     width: 50%;
@@ -148,6 +148,7 @@ ul {
     color: #a6a6a6;
 }
 
+/* Price section - specifically called out in requirements */
 .price {
     margin: 1.5em 0;
     color: #ff3f40;
@@ -159,6 +160,7 @@ ul {
     font-weight: 300;
 }
 
+/* Variant section - for apple colors */
 .variant {
     margin-bottom: 2em;
 }
@@ -202,6 +204,7 @@ ul {
     object-fit: contain;
 }
 
+/* Description section with benefits */
 .description {
     margin-bottom: 2em;
 }
@@ -235,33 +238,23 @@ ul {
     font-size: 1.2em;
 }
 
-.description:after {
-    content: "BENEFITS";
-    display: block;
-    margin-bottom: 1em;
-    font-weight: 400;
-    color: #a6a6a6;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.product__info:after {
-    content: "ADD TO CART";
-    display: block;
-    width: 100%;
+/* Add to Cart Button */
+.buy--btn {
     background-color: #ff3f40;
-    color: #fff;
-    padding: 1em;
-    font-size: 1em;
+    padding: 1.2em;
+    width: 100%;
     text-align: center;
-    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
     margin-top: auto;
     cursor: pointer;
     transition: all 0.2s;
+    border: none; /* Added to remove default button border */
 }
 
-.product__info:after:hover {
+.buy--btn:hover {
     background-color: #e43639;
 }
 
